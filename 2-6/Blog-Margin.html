@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2-6 | Blog Margin</title>
+    <style>
+        *{
+            margin: 0;
+        }
+        .blog{
+            background-color: lightsalmon;
+            border: 2px solid red;
+            border-radius: 20px;
+            padding: 40px 80px 50px 10px;
+            margin: 40px;
+            width: 50%;
+            height: 400px;
+            /* margin: 10px 50px 100px 400px; */
+        }
+    </style>
+</head>ML-1-M-2.6:
+<body>
+    <div class="blog">
+        <h3>My First Blog:</h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae explicabo magnam odit voluptas distinctio ratione asperiores eaque quaerat fuga at expedita, quasi accusamus, iure pariatur neque ab ducimus officiis ut sequi ipsum! Enim quisquam molestiae qui, corrupti iure, sapiente dolore itaque eveniet distinctio adipisci architecto pariatur eligendi harum obcaecati inventore illo odit neque quibusdam, accusantium expedita a reprehenderit necessitatibus dignissimos.</div>
+    <div class="blog">
+        <h3>My Second Blog:</h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae explicabo magnam odit voluptas distinctio ratione asperiores eaque quaerat fuga at expedita, quasi accusamus, iure pariatur neque ab ducimus officiis ut sequi ipsum! Enim quisquam molestiae qui, corrupti iure, sapiente dolore itaque eveniet distinctio adipisci architecto pariatur eligendi harum obcaecati inventore illo odit neque quibusdam, accusantium expedita a reprehenderit necessitatibus dignissimos.</div>
+    <div class="blog">
+    <h3>My Third Blog:</h3>orem ipsum dolor sit amet consectetur adipisicing elit. Quae explicabo magnam odit voluptas distinctio ratione asperiores eaque quaerat fuga at expedita, quasi accusamus, iure pariatur neque ab ducimus officiis ut sequi ipsum! Enim quisquam molestiae qui, corrupti iure, sapiente dolore itaque eveniet distinctio adipisci architecto pariatur eligendi harum obcaecati inventore illo odit neque quibusdam, accusantium expedita a reprehenderit necessitatibus dignissimos.</div>
+    <h3>Padding And Margin:</h3>
+    <h4>Padding Internal.</h4>
+    <h4>Margin External.</h4>
+    
+    <h3>CSS Margins</h3>
+    <p>Margins are used to create space around elements, outside of any defined borders.</p>
+    <h4>CSS Margins</h4>
+    <p>The CSS margin properties are used to create space around elements, outside of any defined borders.</p>
+    <p>With CSS, you have full control over the margins. There are properties for setting the margin for each side of an element (top, right, bottom, and left).</p>
+    <h3>Margin - Individual Sides</h3>
+    <p>CSS has properties for specifying the margin for each side of an element:</p>
+    <ol>margin-top</ol>
+    <ol>margin-right</ol>
+    <ol>margin-bottom</ol>
+    <ol>margin-left</ol>
+    <h4>All the margin properties can have the following values:</h4>
+    <p>auto - the browser calculates the margin.</p>
+    <p>length - specifies a margin in px, pt, cm, etc.</p>
+    <p>% - specifies a margin in % of the width of the containing element.</p>
+    <p>inherit - specifies that the margin should be inherited from the parent element.</p>
+    <p>Tip: Negative values are allowed.</p>
+    <h4>Example:Set different margins for all four sides of a (p) element:</h4>
+    <ol>p {</ol>
+    <ol>margin-top: 100px;</ol>
+    <ol>margin-bottom: 100px;</ol> 
+    <ol>margin-right: 150px;</ol> 
+    <ol>margin-left: 80px;</ol>
+    <ol>}</ol>
+    <h3>Margin - Shorthand Property:</h3>
+    <p>To shorten the code, it is possible to specify all the margin properties in one property.</p>
+    <p>The margin property is a shorthand property for the following individual margin properties:</p>
+    <ol>margin-top</ol>
+    <ol>margin-right</ol>
+    <ol>margin-bottom</ol>
+    <ol>margin-left</ol>
+    <p>So, here is how it works:</p>
+    <h4>If the margin property has four values:</h4>
+    <p>margin: 25px 50px 75px 100px;</p>
+    <ol>top margin is 25px</ol>
+    <ol>right margin is 50px</ol>
+    <ol>bottom margin is 75px</ol>
+    <ol>left margin is 100px</ol>
+    <h4>Example:Use the margin shorthand property with four values:</h4>
+    <h5>
+        <ol>p {</ol>
+            margin: 25px 50px 75px 100px;
+        <ol>}</ol></h5>
+    <h4>If the margin property has three values:</h4>
+    <p>margin: 25px 50px 75px;</p>
+    <ol>top margin is 25px</ol>
+    <ol>right and left margins are 50px</ol>
+    <ol>bottom margin is 75px</ol>
+    <h4>Example:Use the margin shorthand property with three values: </h4>
+    <ol>p {</ol>
+    <h5>margin: 25px 50px 75px;</h5>
+    <ol>}</ol>
+    <h3>If the margin property has two values:</h3>
+    <p>margin: 25px 50px;</p>
+    <ol>top and bottom margins are 25px</ol>
+    <ol>right and left margins are 50px</ol>
+    <h4>Example:Use the margin shorthand property with two values:</h4>
+    <ol>p {</ol>
+    <h5>margin: 25px 50px;</h5>
+    <ol>}</ol>
+    <h4>If the margin property has one value:</h4>
+    <p>margin: 25px;</p>
+    <ol>all four margins are 25px</ol>
+    <h4>Example:Use the margin shorthand property with one value: </h4>
+    <h5>margin: 25px;</h5>
+    <h3>The auto Value;</h3>
+    <p>You can set the margin property to auto to horizontally center the element within its container.</p>
+    <p>The element will then take up the specified width, and the remaining space will be split equally between the left and right margins.</p>
+    <h4>Example:Use margin: auto:</h4>
+    <ol>div</ol>
+    <ol>width: 300px;</ol>
+    <ol>margin: auto;</ol>
+    <ol>border: 1px solid red;</ol>
+    <h3>The inherit Value:</h3>
+    <p>This example lets the left margin of the (p class = " ex1 ")  element be inherited from the parent element (div):</p>
+    <h4>Example:Use of the inherit value:</h4>
+    <ol>div {</ol>
+    <ol>border: 1px solid red;</ol>
+    <ol> margin-left: 100px;</ol>
+    <ol>}</ol>
+    <ol>p.ex1 {</ol>
+    <ol>margin-left: inherit;</ol>
+    <ol>}</ol>
+    <h3>All CSS Margin Properties:</h3>
+    <h4>Property ---- Description.</h4>
+    <p>margin ----	A shorthand property for setting all the margin properties in one declaration.</p>
+    <p>margin-bottom ----	Sets the bottom margin of an element.</p>
+    <p>margin-left ----	Sets the left margin of an element.</p>
+    <p>margin-right ----	Sets the right margin of an element.</p>
+    <p>margin-top ----	Sets the top margin of an element.</p>
+    
+
+
+      
+
+    
+</body>
+</html>

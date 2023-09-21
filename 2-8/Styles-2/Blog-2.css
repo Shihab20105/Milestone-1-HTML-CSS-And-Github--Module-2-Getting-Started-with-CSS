@@ -1,0 +1,40 @@
+
+h3{
+    color: magenta;
+}
+p{
+    color: blueviolet;
+}
+.page-title{
+    font-weight: 900;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.page-title{
+    font-weight: bolder;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.header{
+    height: 200px;
+    background-color: gray;
+    background-blend-mode: multiply;
+    /* background-image: url("../Images/Favicon/Home.png"); */
+    background-image: url("../Images/Natures/DSC02162.jpg");
+    color: black
+    /* background-size: 5%; */
+    /* background-size: cover; */
+    /* background-size: contain; */
+    background-size: cover;
+    /* background-repeat: repeat-y; */
+    background-repeat: no-repeat;
+    /* background-position: right; */
+    /* background-position: bottom; */
+    /* background-position: bottom right; */
+    /* background-position: top right; */
+    /* background-repeat: repeat-x; */
+    /* background-repeat: no-repeat; */
+    /* background-image: url("../Light\ Pink.jpg"); */
+    /* background-image: url("Nature.jpg"); */
+
+
+}

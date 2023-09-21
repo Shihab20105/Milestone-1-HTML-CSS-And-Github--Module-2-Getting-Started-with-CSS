@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2-6 | Blog Padding</title>
+    <style>
+        *{
+            margin: 0;
+        }
+        .blog{
+            background-color: lightsalmon;
+            border: 2px solid red;
+            border-radius: 20px;
+            padding: 40px 80px 50px 10px;
+            margin: 40px;
+            width: 50%;
+            height: 400px;
+            /* margin: 10px 50px 100px 400px; */
+        }
+    </style>
+</head>ML-1-M-2.6:
+<body>
+    <div class="blog">
+        <h3>My First Blog:</h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae explicabo magnam odit voluptas distinctio ratione asperiores eaque quaerat fuga at expedita, quasi accusamus, iure pariatur neque ab ducimus officiis ut sequi ipsum! Enim quisquam molestiae qui, corrupti iure, sapiente dolore itaque eveniet distinctio adipisci architecto pariatur eligendi harum obcaecati inventore illo odit neque quibusdam, accusantium expedita a reprehenderit necessitatibus dignissimos.</div>
+    <div class="blog">
+        <h3>My Second Blog:</h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae explicabo magnam odit voluptas distinctio ratione asperiores eaque quaerat fuga at expedita, quasi accusamus, iure pariatur neque ab ducimus officiis ut sequi ipsum! Enim quisquam molestiae qui, corrupti iure, sapiente dolore itaque eveniet distinctio adipisci architecto pariatur eligendi harum obcaecati inventore illo odit neque quibusdam, accusantium expedita a reprehenderit necessitatibus dignissimos.</div>
+    <div class="blog">
+    <h3>My Third Blog:</h3>orem ipsum dolor sit amet consectetur adipisicing elit. Quae explicabo magnam odit voluptas distinctio ratione asperiores eaque quaerat fuga at expedita, quasi accusamus, iure pariatur neque ab ducimus officiis ut sequi ipsum! Enim quisquam molestiae qui, corrupti iure, sapiente dolore itaque eveniet distinctio adipisci architecto pariatur eligendi harum obcaecati inventore illo odit neque quibusdam, accusantium expedita a reprehenderit necessitatibus dignissimos.</div>
+</head>
+<body>
+    <h3>CSS Padding</h3>
+    <p>Padding is used to create space around an element's content, inside of any defined borders.</p>
+    <h3>CSS Padding</h3>
+    <p>The CSS padding properties are used to generate space around an element's content, inside of any defined borders.</p>
+    <p>With CSS, you have full control over the padding. There are properties for setting the padding for each side of an element (top, right, bottom, and left).</p>
+    <h3>Padding - Individual Sides:</h3>
+    <h4>CSS has properties for specifying the padding for each side of an element:</h4>
+    <ol>padding-top</ol>
+    <ol>padding-right</ol>
+    <ol>padding-bottom</ol>
+    <ol>padding-left</ol>
+    <h5>All the padding properties can have the following values:</h5>
+    <h5>length - specifies a padding in px, pt, cm, etc.</h5>
+    <h5>% - specifies a padding in % of the width of the containing element</h5>
+    <h5>inherit - specifies that the padding should be inherited from the parent element</h5>
+    <h5>Note: Negative values are not allowed.</h5>
+    <h4>Example:Set different padding for all four sides of a (div) element:  </h4>
+    <ol>div {</ol>
+    <ol>padding-top: 50px;</ol>
+    <ol> padding-right: 30px;</ol>
+    <ol>padding-bottom: 50px;</ol>
+    <ol>padding-left: 80px;</ol>
+    <ol>}</ol>
+    <h3>Padding - Shorthand Property:</h3>
+    <p>To shorten the code, it is possible to specify all the padding properties in one property.</p>
+    <p>The padding property is a shorthand property for the following individual padding properties:</p>
+    <ol>padding-top</ol>
+    <ol>padding-right</ol>
+    <ol>padding-bottom</ol>
+    <ol>padding-left</ol>
+    <h5>So, here is how it works:</h5>
+    <h4>If the padding property has four values:</h4>
+    <h4>padding: 25px 50px 75px 100px;</h4>
+    <ol>top padding is 25px</ol>
+    <ol>right padding is 50px</ol>
+    <ol>bottom padding is 75px</ol>
+    <ol>left padding is 100px</ol>
+    <h5>Example:Use the padding shorthand property with four values:</h5>
+    <ol>div {</ol>
+    <ol> padding: 25px 50px 75px 100px;</ol>
+    <ol>}</ol>
+    <h4>If the padding property has three values:</h4>
+    <h4>padding: 25px 50px 75px;</h4>
+    <ol>top padding is 25px</ol>
+    <ol>right and left paddings are 50px</ol>
+    <ol>bottom padding is 75px</ol>
+    <h5>Example:Use the padding shorthand property with three values: </h5>
+    <ol>div {</ol>
+    <ol>padding: 25px 50px 75px;</ol>
+    <ol>}</ol>
+    <h4>If the padding property has two values:</h4>
+    <h4>padding: 25px 50px;</h4>
+    <ol>top and bottom paddings are 25px</ol>
+    <ol>right and left paddings are 50px</ol>
+    <h5>Example:Use the padding shorthand property with two values: </h5>
+    <ol>div {</ol>
+    <ol>padding: 25px 50px;</ol>
+    <ol>}</ol>
+    <h4>If the padding property has one value:</h4>
+    <h4>padding: 25px;</h4>
+    <ol>all four paddings are 25px</ol>
+    <h5>Example:Use the padding shorthand property with one value: </h5>
+    <ol>div {</ol>
+    <ol>padding: 25px;</ol>
+    <ol>}</ol>
+    <h3>Padding and Element Width:</h3>
+    <p>The CSS width property specifies the width of the element's content area. The content area is the portion inside the padding, border, and margin of an element (the box model).</p>
+    <p>So, if an element has a specified width, the padding added to that element will be added to the total width of the element. This is often an undesirable result.</p>
+    <h5>Example:Here, the (div) element is given a width of 300px. However, the actual width of the (div) element will be 350px (300px + 25px of left padding + 25px of right padding):</h5>
+    <ol>div {</ol>
+    <ol>width: 300px;</ol>
+    <ol>padding: 25px;</ol>
+    <ol>}</ol>
+    <p>To keep the width at 300px, no matter the amount of padding, you can use the box-sizing property. This causes the element to maintain its actual width; if you increase the padding, the available content space will decrease.</p>
+    <h5>Example:Use the box-sizing property to keep the width at 300px, no matter the amount of padding:</h5>
+    <ol>div {</ol>
+    <ol>width: 300px;</ol>
+    <ol>padding: 25px;</ol>
+    <ol> box-sizing: border-box;</ol>
+    <ol>}</ol>
+    <h3>All CSS Padding Properties:</h3>
+    <h5>Property ---- 	Description</h5>
+    <p>padding ----	A shorthand property for setting all the padding properties in one declaration</p>
+    <p>padding-bottom ---- 	Sets the bottom padding of an element</p>
+    <p>padding-left ---- 	Sets the left padding of an element</p>
+    <p>padding-right ---- 	Sets the right padding of an element</p>
+    <p>padding-top ---- 	Sets the top padding of an element</p>
+    
+
+
+
+
+    
+</body>
+</html>
